@@ -87,9 +87,11 @@
 
     /* Select the desired font family for the Chinese name */
     .title-container .chinese-name {
-      font-family: 'Merriweather', serif;
-      /* Example font for Chinese name */
-      font-size: 1.0em;
+      font-family: 'LXGW WenKai', cursive;
+      font-weight: 700;
+      font-size: 1.1em;
+      color: #2c3e50;
+      text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.1);
     }
   </style>
 
@@ -119,12 +121,17 @@
 </head>
 
 <body>
-  <div class="title-container">
-    <h1><span class="english-name">Zhoujun (Jorge) Cheng</span>&nbsp;&nbsp;&nbsp;&nbsp;<span
-        class="chinese-name">承洲骏</span></h1>
+  <div class="title-container" style="margin-bottom: 10px;">
+    <h1><span class="english-name">Zhoujun (Jorge) Cheng</span>&nbsp;&nbsp;&nbsp;&nbsp;
+
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont/style.css" />
+ <span style="font-family: 'LXGW WenKai', cursive; font-size: 1.1em;">承洲骏</span>
+ <!-- <span style="font-family: 'SJXingkai', cursive;">程周俊</span> -->
+
+
   </div>
   <table
-    style="width:100%;max-width:820px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    style="width:100%;max-width:820px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-top:5px;">
     <tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
@@ -132,52 +139,116 @@
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
               <tr style="padding:0px">
-                <td style="padding:2.5%;width:63%;vertical-align:middle">
-                  <p>Glad to meet you here! I am Zhoujun <small>(pronounced similar to
-                      Jorge)</small>. I am now a first-year Ph.D. student at UC San Diego, advised by <a
+                <td style="padding:2.5%;width:60%;vertical-align:middle;">
+                  <p>Glad to meet you here! I am Zhoujun <small style="color: purple;">(pronounced similar to
+                      Jorge)</small>. I am now a Ph.D. student at UC San Diego, advised by <a
                       href="http://zhiting.ucsd.edu/">Prof. Zhiting Hu</a>.
                   </p>
+
                   <p>
-                    Before
-                    that, I received my B.E. and M.E. degrees in Computer Science (IEEE class) from Shanghai Jiao Tong
-                    University,
-                    under the supervision of <a href="https://www.cs.sjtu.edu.cn/~chengfan/">Prof. Fan Cheng</a>.
-                    I also spent great times in HKUNLP advised by <a href="https://taoyds.github.io/">Prof. Tao
+                    Prior to this, I received my B.E. and M.E. degrees in Computer Science (IEEE class) from Shanghai Jiao Tong
+                    University. I also spent great times in HKUNLP advised by <a href="https://taoyds.github.io/">Prof. Tao
                       Yu</a> and Microsoft Research Asia with <a
                       href="https://www.microsoft.com/en-us/research/people/hadong/">Haoyu Dong</a>.
                   </p>
-                  <p>
-                    My research interests lie in the intersection of building large language models and agent systems.
-                  </p>
-
-                  <p style="text-align:left">
+                  
+                  <p style="text-align:left;margin-top:15px;">
                     <a href="mailto:z6cheng@ucsd.edu"><img src="images/mail.svg" alt="Email"
                         style="vertical-align:middle;" width="24" height="24"></a> &nbsp/&nbsp
                     <a href="https://scholar.google.com/citations?user=t41vrrQAAAAJ&hl=en"><img
                         src="images/google-scholar.svg" alt="Google Scholar" style="vertical-align:middle;" width="24"
                         height="24"></a> &nbsp/&nbsp
-                    <a href="https://www.semanticscholar.org/author/Zhoujun-Cheng/1471878967"><img
-                        src="images/semantic-scholar.svg" alt="Semantic Scholar" style="vertical-align:middle;"
-                        width="26" height="26"></a> &nbsp/&nbsp
+                    <a href="https://www.linkedin.com/in/zhoujun-cheng-03bb661aa/"><img
+                        src="images/linkedin.png" alt="LinkedIn" style="vertical-align:middle;"
+                        width="20" height="20"></a> &nbsp/&nbsp
                     <a href="https://twitter.com/ChengZhoujun"><img src="images/twitter.svg" alt="Twitter"
                         style="vertical-align:middle;" width="30" height="30"></a> &nbsp/&nbsp
                     <a href="https://github.com/BlankCheng"><img src="images/github-alt.svg" alt="github"
-                        style="vertical-align:middle;" width="24" height="24"></a>
-                    <!-- <a href="./data/resume.pdf"><img src="images/resume.png" alt="cv" style="vertical-align:middle;"
-                        width="24" height="24"></a> -->
-
+                        style="vertical-align:middle;" width="24" height="24"></a> &nbsp/&nbsp
+                    <a href="./data/resume.pdf"><img src="images/resume.png" alt="cv" style="vertical-align:middle;"
+                        width="24" height="24"></a>
                   </p>
                 </td>
-                <td style="padding:2.5%;width:45%;max-width:45%">
-                  <a href="images/nz2.jpg"><img style="width:130%;max-width:130%" alt="profile photo"
-                      src="images/nz2.jpg" class="hoverZoomLink"></a>
+                <td style="padding:1%;width:40%;max-width:40%;vertical-align:middle">
+                  <a href="images/me_yosemite.jpg"><img style="width:100%;max-width:100%" alt="profile photo"
+                      src="images/me_yosemite.jpg" class="hoverZoomLink"></a>
                 </td>
               </tr>
             </tbody>
           </table>
 
+          <!--************************************* Research Interests *************************************************-->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-top:-5px;">
+            <tbody>
+              <tr>
+                <td style="padding:8px;width:100%;vertical-align:middle">
+            <p>
+              My research interests lie in Natural Language Processing. In particular, I am working on two directions:
+            </p>
+            <ul style="margin-left: 20px; margin-top: 0;">
+              <li><strong>Improving LLM reasoning with scalable data and algorithms</strong> (<a href="https://www.k2think.ai/">K2-Think</a>, <a href="https://arxiv.org/abs/2506.14965">Guru</a>).</li>
+              <li><strong>Grounding LLM into interactive worlds as digital agents</strong> (<a href="https://arxiv.org/abs/2310.10634">OpenAgents</a>, <a href="https://arxiv.org/abs/2403.15452">What Are Tools?</a>, <a href="https://arxiv.org/abs/2210.02875">Binder</a>).</li>
+            </ul>
+            <p>
+              I am also fortunate to contribute to widely-used pretrain/eval datasets (<a href="https://arxiv.org/abs/2504.02807">MegaMath</a>, <a href="https://arxiv.org/abs/2404.07972">OSWorld</a>, <a href="https://huggingface.co/spaces/LLM360/TxT360">TxT360</a>, <a href="https://arxiv.org/abs/2406.15877">BigCodeBench</a>). Before the LLM era, I worked on structured (table, database, spreadsheet) data reasoning (<a href="https://arxiv.org/abs/2109.07323">FORTAP</a>, <a href="https://arxiv.org/abs/2108.06712">HiTab</a>).
+            </p>
+            <p>
+              My long-term goal is <strong>understanding AI to advance AI</strong>.
+            </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
 
-          <hr>
+          <hr style="margin: 30px 0;">
+
+          <!--************************************* News *************************************************-->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <td>
+                  <sectionheading>&nbsp;&nbsp;News</sectionheading>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <td style="padding:8px;width:100%;vertical-align:middle">
+                  <ul style="list-style-type: none; padding: 0; margin: 0;">
+                    <li style="margin-bottom: 10px;">
+                      <table style="width:100%;">
+                        <tr>
+                          <td style="width:120px;vertical-align:top;"><strong>[Sep 2025]</strong></td>
+                          <td><a href="https://www.k2think.ai/">K2-Think</a> is out, a fully open model trained on fully open data reaching 90.8% on AIME24, outperforming GPT-OSS 120B.</td>
+                        </tr>
+                      </table>
+                    </li>
+                    <li style="margin-bottom: 10px;">
+                      <table style="width:100%;">
+                        <tr>
+                          <td style="width:120px;vertical-align:top;"><strong>[June 2025]</strong></td>
+                          <td>Excited to share <a href="https://arxiv.org/abs/2506.14965">Guru</a>, studying RL for reasoning beyond math and code.</td>
+                        </tr>
+                      </table>
+                    </li>
+                    <li style="margin-bottom: 10px;">
+                      <table style="width:100%;">
+                        <tr>
+                          <td style="width:120px;vertical-align:top;"><strong>[Sep 2024]</strong></td>
+                          <td>Started my PhD at UCSD!</td>
+                        </tr>
+                      </table>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <hr style="margin: 30px 0;">
 
           <!--************************************* Publications *************************************************-->
           <table
@@ -189,7 +260,7 @@
                 </td> -->
               <tr>
                 <td>
-                  <sectionheading>&nbsp;&nbsp;Publications</sectionheading>
+                  <sectionheading>&nbsp;&nbsp;Selected Publications</sectionheading>
                 </td>
               </tr>
 
@@ -199,10 +270,46 @@
   <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tbody>
       <tr>
-        <td style="padding:20px;width:75%;vertical-align:middle">
+        <td style="padding:10px;width:75%;vertical-align:middle">
+          <a href="https://arxiv.org/abs/2506.14965">
+            <strong><papertitle>Revisiting Reinforcement Learning for LLM Reasoning from A Cross-Domain Perspective</papertitle></strong>
+          </a>
+          <br>
+          <strong>Zhoujun Cheng*</strong>, Shibo Hao*, Tianyang Liu*, Fan Zhou, Yutao Xie, Feng Yao, Yuexin Bian, Yonghao Zhuang, Nilabjo Dey, Yuheng Zha, Yi Gu, Kun Zhou, Yuqi Wang, Yuan Li, Richard Fan, Jianshu She, Chengqian Gao, Abulhair Saparov, Haonan Li, Taylor W. Killian, Mikhail Yurochkin, Zhengzhong Liu, Eric P. Xing, Zhiting Hu
+          <br>
+          <strong><em>arXiv preprint</em></strong>
+          <br>
+          <a href="https://arxiv.org/pdf/2506.14965">pdf</a> |
+          <a href="https://guru-reasoning.github.io/">website</a> |
+          <a href="https://huggingface.co/datasets/LLM360/guru-RL-92k">dataset</a> |
+          <a href="https://github.com/LLM360/Reasoning360">code</a> |
+          <a href="https://huggingface.co/LLM360/guru-7B">model</a>
+          <br>TL;DR: Investigating how RL for LLM reasoning transfers across six domains.
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding:10px;width:75%;vertical-align:middle">
+          <a href="https://arxiv.org/abs/2504.02807">
+            <strong><papertitle>MegaMath: Pushing the Limits of Open Math Corpora</papertitle></strong>
+          </a>
+          <br>
+          Fan Zhou*, Zengzhi Wang*, Nikhil Ranjan, <strong>Zhoujun Cheng</strong>, Liping Tang, Guowei He, Zhengzhong Liu, Eric P. Xing
+          <br>
+          <strong><em>COLM 2025</em></strong>
+          <br>
+          <a href="https://arxiv.org/pdf/2504.02807">pdf</a> |
+          <a href="https://huggingface.co/datasets/LLM360/MegaMath">dataset</a> |
+          <a href="https://github.com/LLM360/MegaMath">code</a>
+          <br>TL;DR: A 200B-scale high-quality mathematical mid-training dataset.
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding:10px;width:75%;vertical-align:middle">
           <a href="https://arxiv.org/abs/2404.07972">
-            <papertitle>OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer
-              Environments</papertitle>
+            <strong><papertitle>OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer
+              Environments</papertitle></strong>
           </a>
           <br>
           Tianbao Xie, Danyang Zhang, Jixuan Chen, Xiaochuan Li, Siheng Zhao, Ruisheng Cao, Toh Jing Hua,
@@ -210,21 +317,21 @@
           Savarese, Caiming Xiong, Victor Zhong, Tao Yu
           <br>
           <!--              <strong><em>ICLR</em> 2023<font style="color:red;"> (Spotlight)</font></strong>-->
-          <strong><em>NeurIPS 2024 Datasets & Benchmarks</em></strong>
+          <strong><em>NeurIPS 2024 Datasets & Benchmarks, <font style="color:red;">used by OpenAI and Anthropic.</font></em></strong>
           <br>
           <a href="https://arxiv.org/pdf/2404.07972">pdf</a> |
           <a href="https://os-world.github.io">website</a> |
           <a href="https://github.com/xlang-ai/OSWorld">code</a> |
           <a href="https://github.com/xlang-ai/OSWorld/tree/main/evaluation_examples">data</a> |
           <a href="https://os-world.github.io/explorer.html">data viewer</a>
-          <p>An executable environment for benchmarking multi-modal agents on computers.</p>
+          <br>TL;DR: A computer use agent benchmark.
         </td>
       </tr>
 
       <tr>
-        <td style="padding:20px;width:75%;vertical-align:middle">
+        <td style="padding:10px;width:75%;vertical-align:middle">
           <a href="https://arxiv.org/abs/2403.15452">
-            <papertitle>What Are Tools Anyway? A Survey from the Language Model Perspective</papertitle>
+            <strong><papertitle>What Are Tools Anyway? A Survey from the Language Model Perspective</papertitle></strong>
           </a>
           <br>
           Zhiruo Wang, <strong>Zhoujun Cheng</strong>, Hao Zhu, Daniel Fried, Graham Neubig <br>
@@ -233,15 +340,15 @@
           <br>
           <a href="https://arxiv.org/pdf/2403.15452">pdf</a> |
           <a href="https://github.com/zorazrw/awesome-tool-llm">collection</a>
-          <p>An attempt to clarify and discuss some ambiguities in LM tool-using papers.</p>
+          <br>TL;DR: An attempt to clarify and discuss some ambiguities in LM tool-using papers.
         </td>
       </tr>
 
 
       <tr>
-        <td style="padding:20px;width:75%;vertical-align:middle">
+        <td style="padding:10px;width:75%;vertical-align:middle">
           <a href="https://arxiv.org/abs/2310.10634">
-            <papertitle>OpenAgents: An Open Platform for Language Agents in the Wild</papertitle>
+            <strong><papertitle>OpenAgents: An Open Platform for Language Agents in the Wild</papertitle></strong>
           </a>
           <br>
           Tianbao Xie*, Fan Zhou*, <strong>Zhoujun Cheng*</strong>, Peng Shi*, Luoxuan Weng*, Yitao Liu*, Toh
@@ -249,20 +356,20 @@
           Xiong, Tao Yu
           <br>
           <!--              <strong><em>ICLR</em> 2023<font style="color:red;"> (Spotlight)</font></strong>-->
-          <strong><em>COLM 2024</em></strong>
+          <strong><em>COLM 2024, <font style="color:red;">4k github stars, 7k demo users</font></em></strong>
           <br>
           <a href="https://arxiv.org/pdf/2310.10634.pdf">pdf</a> |
           <a href="https://github.com/xlang-ai/OpenAgents">code</a> |
           <a href="https://chat.xlang.ai">demo</a> |
           <a href="https://docs.xlang.ai">docs</a>
-          <p>An open platform for using, hosting, and building language agents.</p>
+          <br>TL;DR: An open platform for using, hosting, and building language agents.
         </td>
       </tr>
 
       <tr>
-        <td style="padding:20px;width:75%;vertical-align:middle">
+        <td style="padding:10px;width:75%;vertical-align:middle">
           <a href="https://arxiv.org/abs/2310.06830">
-            <papertitle>Lemur: Harmonizing Natural Language and Code for Language Agents</papertitle>
+            <strong><papertitle>Lemur: Harmonizing Natural Language and Code for Language Agents</papertitle></strong>
           </a>
           <br>
           Yiheng Xu*, Hongjin Su*, Chen Xing*, Boyu Mi, Qian Liu, Weijia Shi, Binyuan Hui, Fan Zhou, Yitao Liu,
@@ -275,14 +382,14 @@
           <a href="https://arxiv.org/pdf/2310.06830.pdf">pdf</a> |
           <a href="https://github.com/OpenLemur/Lemur">code</a> |
           <a href="https://huggingface.co/OpenLemur/lemur-70b-v1">checkpoint</a>
-          <p>A pretrained 70B agent model with balanced code-text corpora.</p>
+          <br>TL;DR: A pretrained 70B agent model with balanced code-text corpora.
         </td>
       </tr>
 
       <tr>
-        <td style="padding:20px;width:75%;vertical-align:middle">
+        <td style="padding:10px;width:75%;vertical-align:middle">
           <a href="https://arxiv.org/abs/2210.02875">
-            <papertitle>Binding Language Models in Symbolic Languages</papertitle>
+            <strong><papertitle>Binding Language Models in Symbolic Languages</papertitle></strong>
           </a>
           <br>
           <strong>Zhoujun Cheng*</strong>, Tianbao Xie*, Peng Shi, Chengzu Li, Rahul Nadkarni, Yushi Hu, Caiming
@@ -294,68 +401,20 @@
           <a href="https://arxiv.org/pdf/2210.02875.pdf">pdf</a> |
           <a href="https://github.com/HKUNLP/Binder">code</a> |
           <a href="https://huggingface.co/spaces/hkunlp/Binder">demo</a>
-          <p>A training-free neural-symbolic framework mapping task inputs to programs of LLM calls + symbolic
-            languages.</p>
+          <br>TL;DR: A training-free neural-symbolic framework mapping task inputs to programs of LLM calls + symbolic languages.
         </td>
       </tr>
 
-
       <tr>
-        <!--            <td style="padding:20px;width:25%;vertical-align:middle">-->
-        <!--              <div>-->
-        <!--                <img src='images/binder.png' width="160">-->
-        <!--              </div>-->
-        <!--            </td>-->
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="https://arxiv.org/abs/2301.08721">
-            <papertitle>Batch Prompting: Efficient Inference with Large Language Model APIs</papertitle>
-          </a>
-          <br>
-          <strong>Zhoujun Cheng</strong>, Jungo Kasai, Tao Yu
-          <br>
-          <strong><em>EMNLP</em> 2023 Industry Track</strong>
-          <br>
-          <a href="https://arxiv.org/pdf/2301.08721.pdf">pdf</a> |
-          <a href="https://github.com/HKUNLP/batch-prompting">code</a>
-          <p>A simple prompting approach that enables the LLMs to run inference in batches to save budgets&time.
-          </p>
-        </td>
-      </tr>
-
-
-      <tr>
-        <!--            <td style="padding:20px;width:25%;vertical-align:middle">-->
-        <!--              <div>-->
-        <!--                <img src='images/tacube.png' width="160">-->
-        <!--              </div>-->
-        <!--            </td>-->
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="https://arxiv.org/abs/2205.12682">
-            <papertitle>TaCube: Pre-computing Data Cubes for Answering Numerical-Reasoning Questions over
-              Tabular Data</papertitle>
-          </a>
-          <br>
-          Fan Zhou, Mengkang Hu, Haoyu Dong, <strong>Zhoujun Cheng</strong>, Shi Han, Dongmei Zhang
-          <br>
-          <strong><em>EMNLP</em> 2022 <span style="color: red;">(Oral)</span></strong>
-          <br>
-          <a href="https://arxiv.org/pdf/2205.12682.pdf">pdf</a> |
-          <a href="https://github.com/koalazf99/tacube">code</a>
-          <p>Precomputing aggregation/arithmetic results to assist table numerical reasoning.</p>
-        </td>
-      </tr>
-
-
-      <tr>
-        <!--            <td style="padding:20px;width:25%;vertical-align:middle">-->
+        <!--            <td style="padding:10px;width:25%;vertical-align:middle">-->
         <!--              <div>-->
         <!--                <img src='images/hitab.png' width="160">-->
         <!--              </div>-->
         <!--            </td>-->
-        <td style="padding:20px;width:75%;vertical-align:middle">
+        <td style="padding:10px;width:75%;vertical-align:middle">
           <a href="https://arxiv.org/abs/2108.06712">
-            <papertitle>HiTab: A Hierarchical Table Dataset for Question Answering and Natural Language
-              Generation</papertitle>
+            <strong><papertitle>HiTab: A Hierarchical Table Dataset for Question Answering and Natural Language
+              Generation</papertitle></strong>
           </a>
           <br>
           <strong>Zhoujun Cheng*</strong>, Haoyu Dong*, Zhiruo Wang*, Ran Jia, Jiaqi Guo, Yan Gao, Shi Han,
@@ -366,20 +425,20 @@
           <a href="https://arxiv.org/pdf/2108.06712.pdf">pdf</a> |
           <a href="https://github.com/microsoft/HiTab">code</a> |
           <a href="https://github.com/microsoft/HiTab">dataset</a>
-          <p>A hierarchical table dataset for question answering and natural language generation.</p>
+          <br>TL;DR: A hierarchical table dataset for question answering and natural language generation.
         </td>
       </tr>
 
 
       <tr>
-        <!--            <td style="padding:20px;width:25%;vertical-align:middle">-->
+        <!--            <td style="padding:10px;width:25%;vertical-align:middle">-->
         <!--              <div>-->
         <!--                <img src='images/fortap.png' width="160">-->
         <!--              </div>-->
         <!--            </td>-->
-        <td style="padding:20px;width:75%;vertical-align:middle">
+        <td style="padding:10px;width:75%;vertical-align:middle">
           <a href="https://arxiv.org/abs/2109.07323">
-            <papertitle>FORTAP: Using Formulae for Numerical-Reasoning-Aware Table Pretraining</papertitle>
+            <strong><papertitle>FORTAP: Using Formulae for Numerical-Reasoning-Aware Table Pretraining</papertitle></strong>
           </a>
           <br>
           <strong>Zhoujun Cheng*</strong>, Haoyu Dong*, Ran Jia, Pengfei Wu, Shi Han, Fan Cheng, Dongmei Zhang
@@ -388,91 +447,14 @@
           <br>
           <a href="https://arxiv.org/pdf/2109.07323.pdf">pdf</a> |
           <a href="https://github.com/microsoft/TUTA_table_understanding">code</a>
-          <p></p>
-          <p>Adopting spreadsheet formulas to enhance numerical reasoning skills of table modeling.</p>
+          <br>TL;DR: Adopting spreadsheet formulas to enhance numerical reasoning skills of table modeling.
         </td>
       </tr>
 
-
-      <tr>
-        <!--            <td style="padding:20px;width:25%;vertical-align:middle">-->
-        <!--              <div>-->
-        <!--                <img src='images/table_survey.png' width="160">-->
-        <!--              </div>-->
-        <!--            </td>-->
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="https://arxiv.org/abs/2201.09745">
-            <papertitle>Table Pre-training: A Survey on Model Architectures, Pretraining Objectives, and
-              Downstream Tasks</papertitle>
-          </a>
-          <br>
-          Haoyu Dong, <strong>Zhoujun Cheng</strong>, Xinyi He, Mengyu Zhou, Anda Zhou, Fan Zhou, Ao Liu, Shi
-          Han, Dongmei Zhang
-          <br>
-          <strong><em>IJCAI</em> 2022 Survey Track</strong>
-          <br>
-          <a href="https://arxiv.org/pdf/2201.09745.pdf">pdf</a>
-          <p></p>
-          <p>A survey on various tabular models, especially on the pretrained transformers. </p>
-        </td>
-      </tr>
-
-
-      <tr>
-        <!--            <td style="padding:20px;width:25%;vertical-align:middle">-->
-        <!--              <div>-->
-        <!--                <img src='images/keypointnet.png' width="160">-->
-        <!--              </div>-->
-        <!--            </td>-->
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="https://arxiv.org/abs/2002.12687">
-            <papertitle>KeypointNet: A Large-scale 3D Keypoint Dataset Aggregated from Numerous Human
-              Annotations</papertitle>
-          </a>
-          <br>
-          Yang You, Yujing Lou*, Chengkun Li*, <strong>Zhoujun Cheng</strong>, Liangwei Li, Lizhuang Ma, Cewu
-          Lu, Weiming Wang
-          <br>
-          <strong><em>CVPR</em> 2020</strong>
-          <br>
-          <a
-            href="https://openaccess.thecvf.com/content_CVPR_2020/papers/You_KeypointNet_A_Large-Scale_3D_Keypoint_Dataset_Aggregated_From_Numerous_Human_CVPR_2020_paper.pdf">pdf</a>
-          |
-          <a href="https://github.com/qq456cvb/KeypointNet">code</a>
-          <p></p>
-          <p>A large-scale and diverse 3D keypoint dataset.</p>
-        </td>
-      </tr>
-
-
-      <tr>
-        <!--            <td style="padding:20px;width:25%;vertical-align:middle">-->
-        <!--              <div>-->
-        <!--                <img src='images/human_correspondence.png' width="160">-->
-        <!--              </div>-->
-        <!--            </td>-->
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="https://arxiv.org/abs/1912.12577">
-            <papertitle>Human Correspondence Consensus for 3D Object Semantic Understanding</papertitle>
-          </a>
-          <br>
-          Yujing Lou*, Yang You*, Chengkun Li*, <strong>Zhoujun Cheng</strong>, Liangwei Li, Lizhuang Ma,
-          Weiming Wang, Cewu Lu
-          <br>
-          <strong><em>ECCV</em> 2020</strong>
-
-          <br>
-          <a href="https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123670494.pdf">pdf</a> |
-          <a href="https://github.com/yokinglou/CorresPondenceNet">code</a>
-          <p></p>
-          <p>Learning dense semantic correspondences on 3D objects.</p>
-        </td>
-      </tr>
-    </tbody>
   </table>
 
   <!--************************************* Projects *************************************************-->
-  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tbody>
       <tr>
         <td style="padding:20px;width:100%;vertical-align:middle">
@@ -485,14 +467,14 @@
     <tbody>
 
       <tr>
-        <td style="padding:20px;width:25%;vertical-align:middle">
+        <td style="padding:10px;width:25%;vertical-align:middle">
           <div>
             <img src='images/openagents.png' width="280">
           </div>
         </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
+        <td style="padding:10px;width:75%;vertical-align:middle">
           <a href="https://github.com/xlang-ai/OpenAgents">
-            <papertitle>OpenAgents Platform</papertitle>
+            <strong><papertitle>OpenAgents Platform</papertitle></strong>
           </a>
           <br>
           <p>OpenAgents is an agent engineering platform for LLM-powered agents. Before the online service
@@ -518,12 +500,13 @@
       </tr>
 
     </tbody>
-  </table>
+  </table> -->
 
 
   <!--************************************* Awards *************************************************-->
-  <br>
-  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+  <hr style="margin: 30px 0;">
+  
+  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tbody>
       <tr>
         <td>
@@ -534,16 +517,16 @@
   </table>
 
   <div style="margin-left: 5%">
-    <li>Reviewer: ARR, NAACL, ACL, EMNLP, EACL, ICLR</li>
+    <li>Reviewer: NeurIPs, ICLR, COLM, ARR, NAACL, ACL, EMNLP, EACL</li>
     <li>Teaching Assistant: Introduction to Programming, Introduction to Machine Learning</li>
     <li>National Scholarship, 2018</li>
-    <li>Shanghai Outstanding Graduates, 2021</li>
+    <!-- <li>Shanghai Outstanding Graduates, 2021</li> -->
   </div>
 
 
 
   <!--************************************* Beyond Academics *************************************************-->
-  <br>
+  <!-- <br>
   <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
     <tbody>
       <tr>
@@ -562,7 +545,7 @@
       NBA and have enjoyed playing basketball ever since the Mavericks won the championship, largely due to my
       admiration for Dirk Nowitzki.
     </p>
-  </div>
+  </div> -->
 
   <!--        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>-->
   <!--            <td style="padding:10px;width:75%;vertical-align:middle">-->
@@ -578,7 +561,7 @@
           <br>
           <p style="text-align:right;font-size:small;">
             <br>
-            Last update on Oct. 2024
+            Last update on Sep. 2025
             <br>
             <br>
             website credit to <a href="https://github.com/jonbarron/website">Jon Barron</a> and <a
