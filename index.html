@@ -188,8 +188,13 @@
               <tr>
                 <td style="padding:8px;width:100%;vertical-align:middle">
                   <p>
-                    My research centers on natural language processing, particularly <strong>large language model (LLM) reasoning and their interaction with the digital world</strong>. Before the LLM era, I studied structured data reasoning on tables and spreadsheets.
+                    My research focuses on <strong>systematically scaling model training</strong> and grounding models in <strong>real-world environments</strong>. My work spans two interleaved directions:
                   </p>
+                  <ul style="margin-left: 20px; margin-top: 0;">
+                    <li>Scaling LLM reinforcement learning along orthogonal axes:<br>
+                      Rollout Compute (<a href="https://compute-optimal-rl-llm-scaling.github.io/">Compute-Optimal LLM RL</a>), Data Recipe (<a href="https://arxiv.org/abs/2506.14965">Guru</a>), and Model Size (<a href="https://arxiv.org/abs/2512.06201v2">K2-V2-70B</a>)</li>
+                    <li>Digital agents (<a href="https://arxiv.org/abs/2404.07972">OSWorld</a>, <a href="https://github.com/xlang-ai/OpenAgents">OpenAgents</a>, <a href="https://arxiv.org/abs/2210.02875">Binder</a>, and sth ongoing in coding agent...)</li>
+                  </ul>
                 </td>
               </tr>
             </tbody>
@@ -284,6 +289,42 @@
   </table>
   <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tbody>
+      <tr>
+        <td style="padding:10px;width:75%;vertical-align:middle">
+          <a href="https://compute-optimal-rl-llm-scaling.github.io/">
+            <strong><papertitle>IsoCompute Playbook: Optimally Scaling Sampling Compute for RL Training of LLMs</papertitle></strong>
+          </a>
+          <br>
+          <strong>Zhoujun Cheng*</strong>, Yutao Xie*, Yuxiao Qu*, Amrith Setlur*, Shibo Hao, Varad Pimpalkhute, Tongtong Liang, Feng Yao, Zhengzhong Liu, Eric Xing, Virginia Smith, Ruslan Salakhutdinov, Zhiting Hu, Taylor Killian, Aviral Kumar
+          <br>
+          <strong><em>Preprint (in submission)</em></strong>
+          <br>
+          <a href="https://compute-optimal-rl-llm-scaling.github.io/">website</a> |
+          <a href="https://mbzuaiac-my.sharepoint.com/:p:/g/personal/zhuojun_cheng_mbzuai_ac_ae/IQD8VHxSzx44R7OYHn0r6GjfAf5NSTw6N5BJXb7P94mSpFk?e=lmyO7V">slides</a>
+          <a href="https://www.mll.lab.northwestern.edu/">@Northwestern MLL Lab</a>
+          <br>TL;DR: Given a fixed sampling compute budget <i>C</i>, how should it be allocated across
+          problems per batch <i>B</i><sub>problem</sub>, rollouts per problem <i>n</i>, and sequential training steps <i>M</i> ?
+          We study compute-optimal RL scaling (law) and provide a practical playbook for LLM RL training.
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding:10px;width:75%;vertical-align:middle">
+          <a href="https://arxiv.org/abs/2512.06201">
+            <strong><papertitle>K2-V2: A 360-Open, Reasoning-Enhanced LLM</papertitle></strong>
+          </a>
+          <br>
+          Core contributor (responsible for pretraining scaling law and post-training for reasoning)
+          <br>
+          <strong><em>Tech Report</em></strong>
+          <br>
+          <a href="https://arxiv.org/pdf/2512.06201">pdf</a> |
+          <a href="https://huggingface.co/datasets/LLM360/TxT360">data</a> |
+          <a href="https://github.com/llm360/k2v2_train">code</a>
+          <br>TL;DR: A fully open 70B reasoning-enhanced LLM pretrained from scratch.
+        </td>
+      </tr>
+
       <tr>
         <td style="padding:10px;width:75%;vertical-align:middle">
           <a href="https://arxiv.org/abs/2506.14965">
@@ -579,7 +620,7 @@
           <br>
           <p style="text-align:right;font-size:small;">
             <br>
-            Last update: November 2025
+            Last update: February 2026
             <br>
             <br>
             website credit to <a href="https://github.com/jonbarron/website">Jon Barron</a> and <a
