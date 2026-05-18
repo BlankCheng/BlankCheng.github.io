@@ -10,26 +10,26 @@
   <style type="text/css">
     /* Design Credits: Jon Barron and Deepak Pathak and Tairan He*/
     a {
-      color: #1772d0;
+      color: #c2410c;
       text-decoration: none;
     }
 
     a:focus,
     a:hover {
-      color: #f09228;
+      color: #ea580c;
       text-decoration: none;
     }
 
     body,
     td,
     th {
-      font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+      font-family: 'Inter', 'Titillium Web', Verdana, Helvetica, sans-serif;
       font-size: 16px;
       font-weight: 400
     }
 
     heading {
-      font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+      font-family: 'Inter', 'Titillium Web', Verdana, Helvetica, sans-serif;
       font-size: 17px;
       /* 19 */
       font-weight: 600
@@ -43,26 +43,26 @@
     }
 
     strong {
-      font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+      font-family: 'Inter', 'Titillium Web', Verdana, Helvetica, sans-serif;
       font-size: 16px;
       font-weight: 600
         /* 800 */
     }
 
     strongred {
-      font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+      font-family: 'Inter', 'Titillium Web', Verdana, Helvetica, sans-serif;
       color: 'red';
       font-size: 16px
     }
 
     sectionheading {
-      font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+      font-family: 'Inter', 'Titillium Web', Verdana, Helvetica, sans-serif;
       font-size: 22px;
       font-weight: 600
     }
 
     pageheading {
-      font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+      font-family: 'Inter', 'Titillium Web', Verdana, Helvetica, sans-serif;
       font-size: 38px;
       font-weight: 400
     }
@@ -93,6 +93,153 @@
       color: #2c3e50;
       text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.1);
     }
+
+    .pub-tabs {
+      padding: 6px 0 6px 10px;
+      font-family: 'Inter', 'Titillium Web', Verdana, Helvetica, sans-serif;
+      font-size: 16px;
+    }
+
+    .pub-tab {
+      background: none;
+      border: none;
+      padding: 2px 4px;
+      margin: 0;
+      cursor: pointer;
+      color: #888;
+      font-family: inherit;
+      font-size: inherit;
+      font-weight: 400;
+      transition: color 0.15s ease;
+    }
+
+    .pub-tab:hover {
+      color: #ea580c;
+    }
+
+    .pub-tab.active {
+      color: #c2410c;
+      font-weight: 600;
+      border-bottom: 2px solid #c2410c;
+    }
+
+    .pub-tab-divider {
+      color: #ccc;
+      margin: 0 6px;
+    }
+
+    #pubs-table tr.pub.full-only {
+      display: none;
+    }
+
+    #pubs-table.show-full tr.pub.full-only {
+      display: table-row;
+    }
+
+    #pubs-table .pub>td {
+      padding: 16px 10px;
+      font-size: 13.9px;
+      color: #444;
+      line-height: 1.55;
+    }
+
+    #pubs-table .pub>td strong {
+      font-size: inherit;
+    }
+
+    #pubs-table .pub papertitle {
+      display: inline-block;
+      font-size: 17px;
+      color: #1a1a1a;
+      font-weight: 600;
+      line-height: 1.35;
+      margin-bottom: 2px;
+    }
+
+    #pubs-table .pub a:hover papertitle {
+      color: #ea580c;
+    }
+
+    #pubs-table .pub strong:has(em) {
+      color: #2c5e2e;
+    }
+
+    #pubs-table .pub>td>a {
+      font-size: 14px;
+    }
+
+    #pubs-table .pub .tldr {
+      color: #666;
+      font-style: italic;
+    }
+
+    .svc-awards {
+      padding: 6px 10px 0 10px;
+      font-size: 13.7px;
+      color: #444;
+      line-height: 1.7;
+    }
+
+    .svc-awards h4 {
+      font-family: inherit;
+      font-size: 15px;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin: 14px 0 6px 0;
+    }
+
+    .svc-awards h4:first-child {
+      margin-top: 4px;
+    }
+
+    .svc-row {
+      display: flex;
+      gap: 14px;
+      margin-bottom: 4px;
+    }
+
+    .svc-row .svc-label {
+      flex: 0 0 95px;
+      font-weight: 500;
+      color: #777;
+    }
+
+    .svc-row .svc-content {
+      flex: 1;
+    }
+
+    .award-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 14px;
+      margin-bottom: 4px;
+    }
+
+    .award-row .award-year {
+      color: #888;
+      font-variant-numeric: tabular-nums;
+      white-space: nowrap;
+    }
+
+    .about-text {
+      font-size: 15.5px;
+      color: #333;
+      line-height: 1.65;
+    }
+
+    .about-text p {
+      margin: 8px 0;
+    }
+
+    .about-text ul {
+      margin-top: -4px;
+      margin-bottom: 8px;
+    }
+
+    .about-text li {
+      margin-bottom: 3px;
+    }
   </style>
 
   <link rel="shortcut icon" href="images/apple-touch-ri-logo-white-120x120.png">
@@ -101,6 +248,7 @@
   <meta name="Zhoujun Cheng's Homepage" http-equiv="Content-Type" content="Zhoujun Cheng's Homepage">
   <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic'
     rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <!-- Start : Google Analytics Code -->
   <!-- <script>
     (function (i, s, o, g, r, a, m) {
@@ -139,16 +287,16 @@
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
               <tr style="padding:0px">
-                <td style="padding:2.5%;width:60%;vertical-align:middle;">
-                  <p>Glad to meet you here! I am Zhoujun <small style="color: purple;">(pronounced similar to
-                      Jorge)</small>. I am now a Ph.D. student at UC San Diego, advised by <a
+                <td class="about-text" style="padding:2.5%;width:60%;vertical-align:middle;">
+                  <p>Glad to meet you here! I am Zhoujun. I am now a Ph.D. student at UC San Diego, advised by <a
                       href="http://zhiting.ucsd.edu/">Prof. Zhiting Hu</a>.
                   </p>
 
                   <p>
                     Prior to this, I received my B.E. and M.E. degrees in Computer Science (IEEE class) from Shanghai
                     Jiao Tong
-                    University. I also spent great times in HKUNLP advised by <a href="https://taoyds.github.io/">Prof.
+                    University. I also spent great times in HKUNLP with
+                    <a href="https://taoyds.github.io/">Prof.
                       Tao
                       Yu</a> and Microsoft Research Asia with <a
                       href="https://www.microsoft.com/en-us/research/people/hadong/">Haoyu Dong</a>.
@@ -175,7 +323,7 @@
                         width="24" height="24"></a> -->
                   </p>
                 </td>
-                <td style="padding:1%;width:40%;max-width:40%;vertical-align:middle">
+                <td style="padding:1% 10px 1% 1%;width:40%;max-width:40%;vertical-align:middle">
                   <a href="images/me_yosemite.jpg"><img style="width:100%;max-width:100%" alt="profile photo"
                       src="images/me_yosemite.jpg" class="hoverZoomLink"></a>
                 </td>
@@ -188,22 +336,30 @@
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;margin-top:-5px;">
             <tbody>
               <tr>
-                <td style="padding:8px;width:100%;vertical-align:middle">
+                <td class="about-text" style="padding:8px 2.5%;width:100%;vertical-align:middle">
                   <p>
-                    My research focuses on <strong>systematically scaling reinforcement learning and agents</strong>,
-                    spanning two interleaved directions:
+                    My research focuses on <strong>scaling RL and agents</strong> along multiple axes:
                   </p>
                   <ul style="margin-left: 20px; margin-top: -10px;">
-                    <li>Scaling LLM reinforcement learning along different axes:<br>
-                      Rollout Compute (<a href="https://compute-optimal-rl-llm-scaling.github.io/">Compute-Optimal LLM
-                        RL</a>), Data Recipe (<a href="https://arxiv.org/abs/2506.14965">Guru</a>), and Model Size (<a
-                        href="https://arxiv.org/abs/2512.06201v2">K2-V2-70B</a>)</li>
-                    <li>Digital agents (TinyBrew [easy coding/cua/unified agent rollout at scale, pls stay tuned!],
-                      <a href="https://arxiv.org/abs/2404.07972">OSWorld</a>, <a
-                        href="https://github.com/xlang-ai/OpenAgents">OpenAgents</a>, <a
-                        href="https://arxiv.org/abs/2210.02875">Binder</a>)
-                    </li>
+                    <li><strong>Compute</strong> (<a
+                        href="https://compute-optimal-rl-llm-scaling.github.io/">Compute-Optimal
+                        LLM RL</a>): how to optimally allocate RL rollout compute as it scales;</li>
+                    <li><strong>Data</strong> (<a href="https://arxiv.org/abs/2506.14965">Guru</a>): scaling RL training
+                      data across domains and sizes for general reasoning;</li>
+                    <li><strong>Environments</strong> (<a
+                        href="https://cocoa-org.notion.site/nanorollout">NanoRollout</a>):
+                      scaling parallel environments for digital agents (coding & computer-use) for large-scale agent RL
+                      and distillation.</li>
                   </ul>
+                  <p style="margin-top: -5px;">
+                    I was a core contributor to <a href="https://arxiv.org/abs/2512.06201v2">K2-V2-70B</a>, a fully open
+                    70B model from pretraining to post-training, where these insights were applied at production scale.
+                    I also contribute to multiple real-world agent evaluations, including
+                    <a href="https://arxiv.org/abs/2604.11201">CocoaBench</a>,
+                    <a href="https://arxiv.org/abs/2404.07972">OSWorld</a>, and
+                    <a href="https://arxiv.org/abs/2406.15877">BigCodeBench</a>. I believe good evaluation shapes model
+                    capabilities.
+                  </p>
                 </td>
               </tr>
             </tbody>
@@ -289,16 +445,48 @@
                 </td> -->
               <tr>
                 <td>
-                  <sectionheading>&nbsp;&nbsp;Selected Preprints and Publications</sectionheading>
+                  <sectionheading>&nbsp;&nbsp;Publications</sectionheading>
                 </td>
               </tr>
 
       </tr>
     </tbody>
   </table>
-  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+  <div class="pub-tabs">
+    <button class="pub-tab active" data-tab="selected" onclick="showPubs('selected')">Selected Projects</button>
+    <span class="pub-tab-divider">|</span>
+    <button class="pub-tab" data-tab="full" onclick="showPubs('full')">Full List</button>
+  </div>
+  <p style="padding:0 10px;margin:0 0 4px 0;font-size:14px;color:#888;font-style:italic;">
+    * equal contribution; <sup>&dagger;</sup> equal advising.
+  </p>
+  <table id="pubs-table"
+    style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tbody>
-      <tr>
+      <tr class="pub pub-selected">
+        <td style="padding:10px;width:75%;vertical-align:middle">
+          <a href="https://cocoa-org.notion.site/nanorollout">
+            <strong>
+              <papertitle>NanoRollout: Scale Digital Agent Rollouts without Pain</papertitle>
+            </strong>
+          </a>
+          <br>
+          Junli Wang*, <strong>Zhoujun Cheng*<sup>&dagger;</sup></strong>, Yuxuan Zhang*, Shibo Hao, Yao Tang, Zhiting
+          Hu, Prithviraj Ammanabrolu, Hao Zhang<sup>&dagger;</sup>
+          <br>
+          <strong><em>Technical Blog and Repo</em></strong>
+          <br>
+          <a href="https://cocoa-org.notion.site/nanorollout">blog</a> |
+          <a href="https://github.com/cocoa-org/NanoRollout">code</a> |
+          <a href="https://huggingface.co/cocoa-org/Mocha-Coder-32B">model</a> |
+          <a href="https://huggingface.co/datasets/cocoa-org/Mocha-trajectories">data</a>
+          <br><span class="tldr">TL;DR: Scaling parallel environments for digital agents (coding & computer-use) for
+            large-scale agent RL
+            and distillation.</span>
+        </td>
+      </tr>
+
+      <tr class="pub pub-selected">
         <td style="padding:10px;width:75%;vertical-align:middle">
           <a href="https://compute-optimal-rl-llm-scaling.github.io/">
             <strong>
@@ -317,14 +505,15 @@
           <a
             href="https://mbzuaiac-my.sharepoint.com/:p:/g/personal/zhuojun_cheng_mbzuai_ac_ae/IQD8VHxSzx44R7OYHn0r6GjfAd7VY6h9lOS3DwKvlHyw1yE?e=vbaGP0">slides</a>
           <a href="https://www.mll.lab.northwestern.edu/">@Northwestern MLL Lab</a>
-          <br>TL;DR: Given a fixed sampling compute budget <i>C</i>, how should it be allocated across
-          problems per batch <i>B</i><sub>problem</sub>, rollouts per problem <i>n</i>, and sequential training steps
-          <i>M</i> ?
-          We study compute-optimal RL scaling (law) and provide a practical playbook for LLM RL training.
+          <br><span class="tldr">TL;DR: Given a fixed sampling compute budget <i>C</i>, how should it be allocated
+            across
+            problems per batch <i>B</i><sub>problem</sub>, rollouts per problem <i>n</i>, and sequential training steps
+            <i>M</i> ?
+            <!-- We study compute-optimal RL scaling (law) and provide a practical playbook for LLM RL training. --></span>
         </td>
       </tr>
 
-      <tr>
+      <tr class="pub pub-selected">
         <td style="padding:10px;width:75%;vertical-align:middle">
           <a href="{PROJECT_WEBSITE_URL}">
             <strong>
@@ -339,11 +528,12 @@
           <a href="https://arxiv.org/abs/2604.11201">pdf</a> |
           <a href="https://cocoabench.github.io/">website</a> |
           <a href="https://github.com/cocoabench/cocoa-agent">code</a>
-          <br>TL;DR: A unified agent benchmark that requires coding, computer use, and deep research.
+          <br><span class="tldr">TL;DR: A unified agent benchmark that requires coding, computer use, and deep
+            research.</span>
         </td>
       </tr>
 
-      <tr>
+      <tr class="pub pub-selected">
         <td style="padding:10px;width:75%;vertical-align:middle">
           <a href="https://arxiv.org/abs/2506.14965">
             <strong>
@@ -353,8 +543,11 @@
           </a>
           <br>
           <strong>Zhoujun Cheng*</strong>, Shibo Hao*, Tianyang Liu*, Fan Zhou, Yutao Xie, Feng Yao, Yuexin Bian,
-          Yonghao Zhuang, Nilabjo Dey, Yuheng Zha, Yi Gu, Kun Zhou, Yuqi Wang, Yuan Li, Richard Fan, Jianshu She,
-          Chengqian Gao, Abulhair Saparov, Haonan Li, Taylor W. Killian, Mikhail Yurochkin, Zhengzhong Liu, Eric P.
+          Yonghao Zhuang<span class="author-more" id="guru-more" style="display:none;">, Nilabjo Dey, Yuheng Zha, Yi Gu,
+            Kun Zhou, Yuqi Wang, Yuan Li, Richard Fan, Jianshu
+            She, Chengqian Gao, Abulhair Saparov, Haonan Li, Taylor W. Killian, Mikhail Yurochkin, Zhengzhong
+            Liu</span><span class="author-ellipsis" id="guru-ellipsis">, <a href="javascript:void(0);"
+              onclick="toggleAuthors('guru')" style="color:#888;font-style:italic;">see full list</a></span>, Eric P.
           Xing, Zhiting Hu
           <br>
           <strong><em>NeurIPS</em> 2025 Datasets & Benchmarks</strong>
@@ -364,7 +557,8 @@
           <a href="https://huggingface.co/datasets/LLM360/guru-RL-92k">dataset</a> |
           <a href="https://github.com/LLM360/Reasoning360">code</a> |
           <a href="https://huggingface.co/LLM360/guru-7B">model</a>
-          <br>TL;DR: A study of RL for LLM general reasoning with 92K curated problems across six domains.
+          <br><span class="tldr">TL;DR: A study of RL for LLM general reasoning with 92K curated problems across six
+            domains.</span>
         </td>
       </tr>
 
@@ -372,7 +566,7 @@
 
 
 
-      <tr>
+      <tr class="pub pub-selected">
         <td style="padding:10px;width:75%;vertical-align:middle">
           <a href="https://arxiv.org/abs/2512.06201">
             <strong>
@@ -382,36 +576,16 @@
           <br>
           Core contributor (responsible for pretraining scaling law and post-training for reasoning)
           <br>
-          <strong><em>Tech Report</em></strong>
+          <strong><em>Technical Report</em></strong>
           <br>
           <a href="https://arxiv.org/pdf/2512.06201">pdf</a> |
           <a href="https://huggingface.co/datasets/LLM360/TxT360">data</a> |
           <a href="https://github.com/llm360/k2v2_train">code</a>
-          <br>TL;DR: A fully open 70B reasoning-enhanced LLM pretrained from scratch.
+          <br><span class="tldr">TL;DR: A fully open 70B reasoning-enhanced LLM pretrained from scratch.</span>
         </td>
       </tr>
 
-      <tr>
-        <td style="padding:10px;width:75%;vertical-align:middle">
-          <a href="https://arxiv.org/abs/2504.02807">
-            <strong>
-              <papertitle>MegaMath: Pushing the Limits of Open Math Corpora</papertitle>
-            </strong>
-          </a>
-          <br>
-          Fan Zhou*, Zengzhi Wang*, Nikhil Ranjan, <strong>Zhoujun Cheng</strong>, Liping Tang, Guowei He, Zhengzhong
-          Liu, Eric P. Xing
-          <br>
-          <strong><em>COLM</em> 2025</strong>
-          <br>
-          <a href="https://arxiv.org/pdf/2504.02807">pdf</a> |
-          <a href="https://huggingface.co/datasets/LLM360/MegaMath">dataset</a> |
-          <a href="https://github.com/LLM360/MegaMath">code</a>
-          <br>TL;DR: A 200B-scale high-quality mathematical mid-training dataset.
-        </td>
-      </tr>
-
-      <tr>
+      <tr class="pub pub-selected">
         <td style="padding:10px;width:75%;vertical-align:middle">
           <a href="https://arxiv.org/abs/2404.07972">
             <strong>
@@ -425,19 +599,65 @@
           Savarese, Caiming Xiong, Victor Zhong, Tao Yu
           <br>
           <!--              <strong><em>ICLR</em> 2023<font style="color:red;"> (Spotlight)</font></strong>-->
-          <strong><em>NeurIPS</em> 2024 Datasets & Benchmarks, <font style="color:red;">used by OpenAI and Anthropic.
-            </font></strong>
+          <strong><em>NeurIPS</em> 2024 Datasets & Benchmarks</strong>
           <br>
           <a href="https://arxiv.org/pdf/2404.07972">pdf</a> |
           <a href="https://os-world.github.io">website</a> |
           <a href="https://github.com/xlang-ai/OSWorld">code</a> |
           <a href="https://github.com/xlang-ai/OSWorld/tree/main/evaluation_examples">data</a> |
           <a href="https://os-world.github.io/explorer.html">data viewer</a>
-          <br>TL;DR: A computer use agent benchmark.
+          <br><span class="tldr">TL;DR: A computer use agent benchmark.</span>
         </td>
       </tr>
 
-      <tr>
+      <tr class="pub full-only">
+        <td style="padding:10px;width:75%;vertical-align:middle">
+          <a href="https://arxiv.org/abs/2406.15877">
+            <strong>
+              <papertitle>BigCodeBench: Benchmarking Code Generation with Diverse Function Calls and Complex
+                Instructions</papertitle>
+            </strong>
+          </a>
+          <br>
+          Terry Yue Zhuo, Minh Chien Vu, Jenny Chim, Han Hu, Wenhao Yu, Ratnadira Widyasari, Imam Nur Bani Yusuf, Haolan
+          Zhan, Junda He, Indraneil Paul, Simon Brunner, Chen Gong, Thong Hoang, Armel Randy Zebaze, Xiaoheng Hu, Xian
+          Ling Mao, <strong>Zhoujun Cheng</strong>, et al.
+          <br>
+          <strong><em>ICLR</em> 2025</strong>
+          <br>
+          <a href="https://arxiv.org/pdf/2406.15877">pdf</a> |
+          <a href="https://bigcode-bench.github.io/">website</a> |
+          <a href="https://github.com/bigcode-project/bigcodebench">code</a>
+          <br><span class="tldr">TL;DR: A benchmark for code generation with diverse function calls and complex
+            instructions.</span>
+        </td>
+      </tr>
+
+      <tr class="pub pub-selected">
+        <td style="padding:10px;width:75%;vertical-align:middle">
+          <a href="https://arxiv.org/abs/2310.10634">
+            <strong>
+              <papertitle>OpenAgents: An Open Platform for Language Agents in the Wild</papertitle>
+            </strong>
+          </a>
+          <br>
+          Tianbao Xie*, Fan Zhou*, <strong>Zhoujun Cheng*</strong>, Peng Shi*, Luoxuan Weng*, Yitao Liu*, Toh
+          Jing Hua, Junning Zhao, Qian Liu, Che Liu, Leo Z. Liu, Yiheng Xu, Hongjin Su, Dongchan Shin, Caiming
+          Xiong, Tao Yu
+          <br>
+          <!--              <strong><em>ICLR</em> 2023<font style="color:red;"> (Spotlight)</font></strong>-->
+          <strong><em>COLM</em> 2024, 4.7k github stars, 7k demo users</strong>
+          <br>
+          <a href="https://arxiv.org/pdf/2310.10634.pdf">pdf</a> |
+          <a href="https://github.com/xlang-ai/OpenAgents">code</a> |
+          <a href="https://chat.xlang.ai">demo</a> |
+          <a href="https://docs.xlang.ai">docs</a>
+          <br><span class="tldr">TL;DR: An open platform for using, hosting, and building language agents.</span>
+        </td>
+      </tr>
+
+
+      <tr class="pub full-only">
         <td style="padding:10px;width:75%;vertical-align:middle">
           <a href="https://arxiv.org/abs/2403.15452">
             <strong>
@@ -451,35 +671,12 @@
           <br>
           <a href="https://arxiv.org/pdf/2403.15452">pdf</a> |
           <a href="https://github.com/zorazrw/awesome-tool-llm">collection</a>
-          <br>TL;DR: An attempt to clarify and discuss some ambiguities in LM tool-using papers.
+          <br><span class="tldr">TL;DR: An attempt to clarify and discuss some ambiguities in LM tool-using
+            papers.</span>
         </td>
       </tr>
 
-
-      <tr>
-        <td style="padding:10px;width:75%;vertical-align:middle">
-          <a href="https://arxiv.org/abs/2310.10634">
-            <strong>
-              <papertitle>OpenAgents: An Open Platform for Language Agents in the Wild</papertitle>
-            </strong>
-          </a>
-          <br>
-          Tianbao Xie*, Fan Zhou*, <strong>Zhoujun Cheng*</strong>, Peng Shi*, Luoxuan Weng*, Yitao Liu*, Toh
-          Jing Hua, Junning Zhao, Qian Liu, Che Liu, Leo Z. Liu, Yiheng Xu, Hongjin Su, Dongchan Shin, Caiming
-          Xiong, Tao Yu
-          <br>
-          <!--              <strong><em>ICLR</em> 2023<font style="color:red;"> (Spotlight)</font></strong>-->
-          <strong><em>COLM</em> 2024, <font style="color:red;">4k github stars, 7k demo users</font></strong>
-          <br>
-          <a href="https://arxiv.org/pdf/2310.10634.pdf">pdf</a> |
-          <a href="https://github.com/xlang-ai/OpenAgents">code</a> |
-          <a href="https://chat.xlang.ai">demo</a> |
-          <a href="https://docs.xlang.ai">docs</a>
-          <br>TL;DR: An open platform for using, hosting, and building language agents.
-        </td>
-      </tr>
-
-      <tr>
+      <tr class="pub full-only">
         <td style="padding:10px;width:75%;vertical-align:middle">
           <a href="https://arxiv.org/abs/2310.06830">
             <strong>
@@ -492,16 +689,16 @@
           Tao Yu
           <br>
           <!--              <strong><em>ICLR</em> 2023<font style="color:red;"> (Spotlight)</font></strong>-->
-          <strong><em>ICLR</em> 2024 <span style="color: red;">(Spotlight)</span></strong>
+          <strong><em>ICLR</em> 2024 (Spotlight)</strong>
           <br>
           <a href="https://arxiv.org/pdf/2310.06830.pdf">pdf</a> |
           <a href="https://github.com/OpenLemur/Lemur">code</a> |
           <a href="https://huggingface.co/OpenLemur/lemur-70b-v1">checkpoint</a>
-          <br>TL;DR: A pretrained 70B agent model with balanced code-text corpora.
+          <br><span class="tldr">TL;DR: A pretrained 70B agent model with balanced code-text corpora.</span>
         </td>
       </tr>
 
-      <tr>
+      <tr class="pub pub-selected">
         <td style="padding:10px;width:75%;vertical-align:middle">
           <a href="https://arxiv.org/abs/2210.02875">
             <strong>
@@ -513,17 +710,18 @@
           Xiong, Dragomir Radev, Mari Ostendorf, Luke Zettlemoyer, Noah A. Smith, Tao Yu
           <br>
           <!--              <strong><em>ICLR</em> 2023<font style="color:red;"> (Spotlight)</font></strong>-->
-          <strong><em>ICLR</em> 2023 <span style="color: red;">(Spotlight)</span></strong>
+          <strong><em>ICLR</em> 2023 (Spotlight)</strong>
           <br>
           <a href="https://arxiv.org/pdf/2210.02875.pdf">pdf</a> |
           <a href="https://github.com/HKUNLP/Binder">code</a> |
           <a href="https://huggingface.co/spaces/hkunlp/Binder">demo</a>
-          <br>TL;DR: A training-free neural-symbolic framework mapping task inputs to programs of LLM calls + symbolic
-          languages.
+          <br><span class="tldr">TL;DR: A training-free neural-symbolic framework mapping task inputs to programs of LLM
+            calls + symbolic
+            languages.</span>
         </td>
       </tr>
 
-      <tr>
+      <tr class="pub full-only">
         <!--            <td style="padding:10px;width:25%;vertical-align:middle">-->
         <!--              <div>-->
         <!--                <img src='images/hitab.png' width="160">-->
@@ -545,12 +743,13 @@
           <a href="https://arxiv.org/pdf/2108.06712.pdf">pdf</a> |
           <a href="https://github.com/microsoft/HiTab">code</a> |
           <a href="https://github.com/microsoft/HiTab">dataset</a>
-          <br>TL;DR: A hierarchical table dataset for question answering and natural language generation.
+          <br><span class="tldr">TL;DR: A hierarchical table dataset for question answering and natural language
+            generation.</span>
         </td>
       </tr>
 
 
-      <tr>
+      <tr class="pub full-only">
         <!--            <td style="padding:10px;width:25%;vertical-align:middle">-->
         <!--              <div>-->
         <!--                <img src='images/fortap.png' width="160">-->
@@ -569,11 +768,43 @@
           <br>
           <a href="https://arxiv.org/pdf/2109.07323.pdf">pdf</a> |
           <a href="https://github.com/microsoft/TUTA_table_understanding">code</a>
-          <br>TL;DR: Adopting spreadsheet formulas to enhance numerical reasoning skills of table modeling.
+          <br><span class="tldr">TL;DR: Adopting spreadsheet formulas to enhance numerical reasoning skills of table
+            modeling.</span>
         </td>
       </tr>
 
   </table>
+
+  <script>
+    function showPubs(mode) {
+      var table = document.getElementById('pubs-table');
+      if (mode === 'full') {
+        table.classList.add('show-full');
+      } else {
+        table.classList.remove('show-full');
+      }
+      var tabs = document.querySelectorAll('.pub-tab');
+      for (var i = 0; i < tabs.length; i++) {
+        if (tabs[i].dataset.tab === mode) {
+          tabs[i].classList.add('active');
+        } else {
+          tabs[i].classList.remove('active');
+        }
+      }
+    }
+
+    function toggleAuthors(key) {
+      var more = document.getElementById(key + '-more');
+      var ellipsis = document.getElementById(key + '-ellipsis');
+      if (more.style.display === 'none') {
+        more.style.display = 'inline';
+        ellipsis.style.display = 'none';
+      } else {
+        more.style.display = 'none';
+        ellipsis.style.display = 'inline';
+      }
+    }
+  </script>
 
   <!--************************************* Projects *************************************************-->
   <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
@@ -638,16 +869,39 @@
     </tbody>
   </table>
 
-  <div style="margin-left: 5%">
-    <li>Reviewer: NeurIPs 2025, ICLR 2025-2026, COLM 2025-2026, ACL Rolling Review (ARR) 2023-2025, NAACL 2024, ACL
-      2024,
-      EMNLP 2024, EACL 2024, COLING 2024, CCL 2022-2023</li>
-    <li>Teaching Assistant: Introduction to Programming, Introduction to Machine Learning</li>
-    <li>Shanghai Outstanding Graduates, 2021</li>
-    <li>MSRA Stars of Tomorrow, 2021</li>
-    <li>Zhiyuan Honor Scholarship (top 5% in SJTU), 2018 – 2020</li>
-    <li>Shanghai Jiao Tong University Excellent Scholarship (top 10% in SJTU), 2018 – 2020</li>
-    <li>National Scholarship, 2018</li>
+  <div class="svc-awards">
+    <h4>Services</h4>
+    <div class="svc-row">
+      <div class="svc-label">Reviewer</div>
+      <div class="svc-content">NeurIPS 2025 · ICLR 2025–2026 · COLM 2025–2026 · ACL ARR 2023–2025 ·
+        NAACL/ACL/EMNLP/EACL/COLING 2024 · CCL 2022–2023</div>
+    </div>
+    <div class="svc-row">
+      <div class="svc-label">Teaching</div>
+      <div class="svc-content">Intro to Programming · Intro to Machine Learning</div>
+    </div>
+
+    <h4>Awards</h4>
+    <div class="award-row">
+      <div>Shanghai Outstanding Graduates</div>
+      <div class="award-year">2021</div>
+    </div>
+    <div class="award-row">
+      <div>MSRA Stars of Tomorrow</div>
+      <div class="award-year">2021</div>
+    </div>
+    <div class="award-row">
+      <div>Zhiyuan Honor Scholarship (top 5%, SJTU)</div>
+      <div class="award-year">2018–2020</div>
+    </div>
+    <div class="award-row">
+      <div>SJTU Excellent Scholarship (top 10%)</div>
+      <div class="award-year">2018–2020</div>
+    </div>
+    <div class="award-row">
+      <div>National Scholarship</div>
+      <div class="award-year">2018</div>
+    </div>
   </div>
 
 
