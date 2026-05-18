@@ -10,14 +10,23 @@
   <style type="text/css">
     /* Design Credits: Jon Barron and Deepak Pathak and Tairan He*/
     a {
-      color: #c2410c;
+      color: #9a3412;
       text-decoration: none;
     }
 
     a:focus,
     a:hover {
-      color: #ea580c;
+      color: #c2410c;
       text-decoration: none;
+    }
+
+    a.prof-link {
+      color: #1772d0;
+    }
+
+    a.prof-link:focus,
+    a.prof-link:hover {
+      color: #ea580c;
     }
 
     body,
@@ -289,16 +298,16 @@
               <tr style="padding:0px">
                 <td class="about-text" style="padding:2.5%;width:60%;vertical-align:middle;">
                   <p>Glad to meet you here! I am Zhoujun. I am now a Ph.D. student at UC San Diego, advised by <a
-                      href="http://zhiting.ucsd.edu/">Prof. Zhiting Hu</a>.
+                      class="prof-link" href="http://zhiting.ucsd.edu/">Prof. Zhiting Hu</a>.
                   </p>
 
                   <p>
                     Prior to this, I received my B.E. and M.E. degrees in Computer Science (IEEE class) from Shanghai
                     Jiao Tong
                     University. I also spent great times in HKUNLP with
-                    <a href="https://taoyds.github.io/">Prof.
+                    <a class="prof-link" href="https://taoyds.github.io/">Prof.
                       Tao
-                      Yu</a> and Microsoft Research Asia with <a
+                      Yu</a> and Microsoft Research Asia with <a class="prof-link"
                       href="https://www.microsoft.com/en-us/research/people/hadong/">Haoyu Dong</a>.
                   </p>
 
@@ -352,8 +361,10 @@
                       and distillation.</li>
                   </ul>
                   <p style="margin-top: -5px;">
-                    I was a core contributor to <a href="https://arxiv.org/abs/2512.06201v2">K2-V2-70B</a>, a fully open
-                    70B model from pretraining to post-training, where these insights were applied at production scale.
+                    I am also a core developer of foundation models like
+                    <a href="https://huggingface.co/cocoa-org/Mocha-Coder-32B">Mocha-Coder-32B</a> and
+                    <a href="https://arxiv.org/abs/2512.06201v2">K2-V2-70B</a>, which apply these insights at production
+                    scale.
                     I also contribute to multiple real-world agent evaluations, including
                     <a href="https://arxiv.org/abs/2604.11201">CocoaBench</a>,
                     <a href="https://arxiv.org/abs/2404.07972">OSWorld</a>, and
@@ -566,6 +577,45 @@
 
 
 
+      <tr class="pub full-only">
+        <td style="padding:10px;width:75%;vertical-align:middle">
+          <a href="https://arxiv.org/abs/2506.01928">
+            <strong>
+              <papertitle>Esoteric Language Models: Bridging Autoregressive and Masked Diffusion LLMs</papertitle>
+            </strong>
+          </a>
+          <br>
+          Subham Sekhar Sahoo, Zhihan Yang, Yash Akhauri, Johnna Liu, Deepansha Singh, <strong>Zhoujun Cheng</strong>,
+          Zhengzhong Liu, Eric Xing, John Thickstun, Arash Vahdat
+          <br>
+          <strong><em>Preprint</em></strong>
+          <br>
+          <a href="https://arxiv.org/pdf/2506.01928">pdf</a>
+          <br><span class="tldr">TL;DR: A unified LM family bridging autoregressive and masked diffusion
+            paradigms.</span>
+        </td>
+      </tr>
+
+      <tr class="pub full-only">
+        <td style="padding:10px;width:75%;vertical-align:middle">
+          <a href="https://arxiv.org/abs/2504.02807">
+            <strong>
+              <papertitle>MegaMath: Pushing the Limits of Open Math Corpora</papertitle>
+            </strong>
+          </a>
+          <br>
+          Fan Zhou*, Zengzhi Wang*, Nikhil Ranjan, <strong>Zhoujun Cheng</strong>, Liping Tang, Guowei He, Zhengzhong
+          Liu, Eric P. Xing
+          <br>
+          <strong><em>COLM</em> 2025</strong>
+          <br>
+          <a href="https://arxiv.org/pdf/2504.02807">pdf</a> |
+          <a href="https://huggingface.co/datasets/LLM360/MegaMath">dataset</a> |
+          <a href="https://github.com/LLM360/MegaMath">code</a>
+          <br><span class="tldr">TL;DR: A 200B-scale high-quality mathematical mid-training dataset.</span>
+        </td>
+      </tr>
+
       <tr class="pub pub-selected">
         <td style="padding:10px;width:75%;vertical-align:middle">
           <a href="https://arxiv.org/abs/2512.06201">
@@ -620,10 +670,12 @@
           </a>
           <br>
           Terry Yue Zhuo, Minh Chien Vu, Jenny Chim, Han Hu, Wenhao Yu, Ratnadira Widyasari, Imam Nur Bani Yusuf, Haolan
-          Zhan, Junda He, Indraneil Paul, Simon Brunner, Chen Gong, Thong Hoang, Armel Randy Zebaze, Xiaoheng Hu, Xian
-          Ling Mao, <strong>Zhoujun Cheng</strong>, et al.
+          Zhan, Junda He, Indraneil Paul, Simon Brunner, Chen Gong, Thong Hoang, Armel Randy Zebaze, Xiaoheng Hong,
+          Wen-Ding Li, Jean Kaddour, Ming Xu, Zhihan Zhang, Prateek Yadav, Naman Jain, Alex Gu,
+          <strong>Zhoujun Cheng</strong>, Jiawei Liu, Qian Liu, Zijian Wang, Binyuan Hui, Niklas Muennighoff, David Lo,
+          Daniel Fried, Xiaoning Du, Harm de Vries, Leandro Von Werra
           <br>
-          <strong><em>ICLR</em> 2025</strong>
+          <strong><em>ICLR</em> 2025 (Oral)</strong>
           <br>
           <a href="https://arxiv.org/pdf/2406.15877">pdf</a> |
           <a href="https://bigcode-bench.github.io/">website</a> |
@@ -695,6 +747,25 @@
           <a href="https://github.com/OpenLemur/Lemur">code</a> |
           <a href="https://huggingface.co/OpenLemur/lemur-70b-v1">checkpoint</a>
           <br><span class="tldr">TL;DR: A pretrained 70B agent model with balanced code-text corpora.</span>
+        </td>
+      </tr>
+
+      <tr class="pub full-only">
+        <td style="padding:10px;width:75%;vertical-align:middle">
+          <a href="https://arxiv.org/abs/2301.08721">
+            <strong>
+              <papertitle>Batch Prompting: Efficient Inference with Large Language Model APIs</papertitle>
+            </strong>
+          </a>
+          <br>
+          <strong>Zhoujun Cheng</strong>, Jungo Kasai, Tao Yu
+          <br>
+          <strong><em>EMNLP</em> 2023 Industry Track</strong>
+          <br>
+          <a href="https://arxiv.org/pdf/2301.08721">pdf</a> |
+          <a href="https://github.com/HKUNLP/batch-prompting">code</a>
+          <br><span class="tldr">TL;DR: Batch multiple queries into a single prompt for cheaper, faster LLM API
+            inference.</span>
         </td>
       </tr>
 
@@ -770,6 +841,24 @@
           <a href="https://github.com/microsoft/TUTA_table_understanding">code</a>
           <br><span class="tldr">TL;DR: Adopting spreadsheet formulas to enhance numerical reasoning skills of table
             modeling.</span>
+        </td>
+      </tr>
+
+      <tr class="pub full-only">
+        <td style="padding:10px;width:75%;vertical-align:middle">
+          <a href="https://arxiv.org/abs/2205.12682">
+            <strong>
+              <papertitle>TaCube: Pre-computing Data Cubes for Answering Numerical-Reasoning Questions over Tabular
+                Data</papertitle>
+            </strong>
+          </a>
+          <br>
+          Fan Zhou, Mengkang Hu, Haoyu Dong, <strong>Zhoujun Cheng</strong>, Shi Han, Dongmei Zhang
+          <br>
+          <strong><em>EMNLP</em> 2022 Findings</strong>
+          <br>
+          <a href="https://arxiv.org/pdf/2205.12682">pdf</a>
+          <br><span class="tldr">TL;DR: Pre-computing data cubes for numerical reasoning over tables.</span>
         </td>
       </tr>
 
